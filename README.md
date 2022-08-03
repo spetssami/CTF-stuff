@@ -38,5 +38,7 @@ Same as nmap but faster
 [linPEAS/winPEAS](https://github.com/carlospolop/PEASS-ng)  
 Scripts that look for vulnerabilities inside the OS.
 
+[GTFObins](https://gtfobins.github.io/)  
+Curated list of Unix binaries that can be used to bypass local security restrictions in a miconfigured system.
 
 ## Post exploit
