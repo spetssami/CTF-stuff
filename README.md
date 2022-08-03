@@ -7,21 +7,14 @@ This repo contains some miscallenious notes/tips for me to use when I do CTFs. M
 [Certificate search](https://crt.sh)  
 Find certificates by certificate hash, domain name or organization name
 
-### Content discovery
-
-[Fuzz Faster u Fool](https://github.com/ffuf/ffuf)  
-Find direcotries/VHosts in a website. Can also be used to fuzz GET parameter 
-
-[Gobuster](https://github.com/OJ/gobuster)  
-Find directories/DNSs/VHosts in a website
-
 ### Identifying technologies
 
 [OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database) - Use favicon md5-sums to find the framework
 
 Wappalyzer - Browser plugin that (I assume) reads HTTP-headers and identifies underlying technologies
 
-
+[Sublist3r](https://github.com/aboul3la/Sublist3r)  
+Subdomain enumerator that uses OSINT
 
 ## Enumeration/Scanning
 
@@ -30,6 +23,17 @@ Search for open ports in a machine. Automatically look for exploits for the soft
 
 Rustscan    
 Same as nmap but faster
+
+### Content discovery
+
+[Fuzz Faster u Fool](https://github.com/ffuf/ffuf)  
+Find direcotries/VHosts in a website. Can also be used to fuzz GET parameter 
+
+[Gobuster](https://github.com/OJ/gobuster)  
+Find directories/DNSs/VHosts in a website
+
+[DNSRecon](https://github.com/darkoperator/dnsrecon)  
+DNS Enumeration Script
 
 ## Exploiting
 
