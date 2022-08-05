@@ -46,3 +46,8 @@ Scripts that look for vulnerabilities inside the OS.
 Curated list of Unix binaries that can be used to bypass local security restrictions in a miconfigured system.
 
 ## Post exploit
+
+
+## Misc
+
+[CyberChef](https://gchq.github.io/CyberChef)
