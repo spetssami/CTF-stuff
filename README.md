@@ -7,6 +7,15 @@ This repo contains some miscallenious notes/tips for me to use when I do CTFs. M
 [Certificate search](https://crt.sh)  
 Find certificates by certificate hash, domain name or organization name
 
+NsLookup  
+Tool to lookup DNS records
+
+[DNSDumpster](https://dnsdumpster.com)  
+Tool for subdomain enumeration.
+
+[Shodan](https://shodan.io)  
+Search Engine for Internet connected devices
+
 ### Identifying technologies
 
 [OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database) - Use favicon md5-sums to find the framework
