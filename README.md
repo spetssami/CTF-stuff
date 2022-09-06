@@ -62,6 +62,12 @@ Curated list of Unix binaries that can be used to bypass local security restrict
 
 ## Post exploit
 
+### Unshadow tool  
+Use ```unshadow passwd.txt shadow.txt > passwords.txt``` where passwd.txt contains the contents from ```/etc/passwd``` and shadow.txt ```/etc/shadow```  
+
+### [John](https://github.com/openwall/john)
+After you've used the unshadow tool, you can use ```john passwords.txt``` to bruteforce the passwords
+
 
 ## Misc
 
