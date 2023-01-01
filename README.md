@@ -90,3 +90,5 @@ After you've used the unshadow tool, you can use ```john passwords.txt``` to bru
 ## Misc
 
 [CyberChef](https://gchq.github.io/CyberChef)
+
+[WebHook Site](https://webhook.site/)
